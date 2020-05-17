@@ -18,7 +18,6 @@ class RootIndex extends React.Component {
           <Helmet title={siteTitle} />
           <Hero data={author.node} />
           <div className="wrapper">
-            <h2 className="section-headline">Recent articles</h2>
             <ul className="article-list">
               {posts.map(({ node }) => {
                 return (
@@ -52,13 +51,8 @@ export const pageQuery = graphql`
           publishDate(formatString: "MMMM Do, YYYY")
           tags
           heroImage {
-            fluid(maxWidth: 350, maxHeight: 196, resizingBehavior: SCALE) {
+            fluid(maxWidth: 350, maxHeight: 256, resizingBehavior: FILL) {
               ...GatsbyContentfulFluid_tracedSVG
-            }
-          }
-          description {
-            childMarkdownRemark {
-              html
             }
           }
         }
@@ -78,7 +72,7 @@ export const pageQuery = graphql`
             fluid(
               maxWidth: 1180
               maxHeight: 480
-              resizingBehavior: PAD
+              resizingBehavior: FILL
               background: "rgb:000000"
             ) {
               ...GatsbyContentfulFluid_tracedSVG

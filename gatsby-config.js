@@ -37,5 +37,15 @@ module.exports = {
       resolve: 'gatsby-source-contentful',
       options: contentfulConfig,
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `oxygen`,
+          `source sans pro\:300,400,700` // you can also specify font weights and styles
+        ],
+        display: 'swap'
+      }
+    }
   ],
 }

@@ -1,17 +1,17 @@
 @font-face {
-  font-family: "Avenir";
+  font-family: "Oxygen, Helvetica";
   font-weight: 400;
   font-style: normal;
-  src: url("/avenir-400.woff2") format("woff2");
+  src: url("/oxygen-400.woff2") format("woff2");
   font-display: swap;
 }
 
 body {
-  font-family: "Avenir", Tahoma, Arial, Helvetica, sans-serif;
+  font-family: "Oxygen", Tahoma, Arial, Helvetica, sans-serif;
   font-size: 1em;
   line-height: 1.65;
   color: #373F49;
-  background: #eee;
+  background: #fff;
   margin: 0;
 }
 
@@ -20,11 +20,26 @@ img {
   width: 100%;
 }
 
+blockquote > p{
+  color: #667;
+}
+blockquote {
+  padding: 0;
+  margin: 0;
+}
+
+ol {
+  padding: 0 3vmin;
+}
+
 h1,
-h2,
-h3 {
+h2{
   font-size: 2em;
-  font-weight: normal;
+  font-weight: 400;
+}
+h3 {
+  font-size: 1.5em;
+  font-weight: 700;
 }
 
 a {
