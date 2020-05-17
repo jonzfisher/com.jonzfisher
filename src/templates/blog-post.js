@@ -19,11 +19,6 @@ class BlogPostTemplate extends React.Component {
       <Layout location={this.props.location}>
         <PostContainer style={{ background: '#fff' }}>
           <Helmet title={`${post.title} | ${siteTitle}`} />
-          {/* <div className={heroStyles.hero}>
-            <div
-              className={heroStyles.heroArea}
-            />
-          </div> */}
           <div className="wrapper">
             <h1 className="section-headline">{post.title}</h1>
             <p
