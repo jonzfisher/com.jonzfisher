@@ -27,7 +27,7 @@ export default ({ data }) => (
       className={styles.heroArea}
     >
       <div className={styles.heroDetails}>
-        <StyledImg alt="profile image" fluid={data.heroImage} />
+        {/* <StyledImg alt="profile image" fluid={data.heroImage} /> */}
         <h3 className={styles.heroHeadline}>{data.name}</h3>
         <Title className={styles.heroTitle}>{data.title}</Title>
         <ShortBio>{data.shortBio.shortBio}</ShortBio>
