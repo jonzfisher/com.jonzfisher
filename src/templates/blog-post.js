@@ -10,6 +10,9 @@ const PostContainer = styled.div`
   margin: 0 auto;
 `
 
+const ArticleTitle = styled.h1`
+  color: #095f88;
+`
 class BlogPostTemplate extends React.Component {
   render() {
     const post = get(this.props, 'data.contentfulBlogPost')
@@ -20,7 +23,7 @@ class BlogPostTemplate extends React.Component {
         <PostContainer style={{ background: '#fff' }}>
           <Helmet title={`${post.title} | ${siteTitle}`} />
           <div className="wrapper">
-            <h1 className="section-headline">{post.title}</h1>
+            <ArticleTitle className="section-headline">{post.title}</ArticleTitle>
             <p
               style={{
                 display: 'block',

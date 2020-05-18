@@ -1,11 +1,15 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import get from 'lodash/get'
+import styled from '@emotion/styled'
 import { Helmet } from 'react-helmet'
 import Hero from '../components/hero'
 import Layout from '../components/layout'
 import ArticlePreview from '../components/article-preview'
 
+const ArticleTitle = styled.h1`
+  color: #095f88;
+`
 class RootIndex extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
@@ -18,6 +22,7 @@ class RootIndex extends React.Component {
           <Helmet title={siteTitle} />
           <Hero data={author.node} />
           <div className="wrapper">
+            <ArticleTitle>Projects</ArticleTitle>
             <ul className="article-list">
               {posts.map(({ node }) => {
                 return (
@@ -73,7 +78,6 @@ export const pageQuery = graphql`
               maxWidth: 1180
               maxHeight: 480
               resizingBehavior: FILL
-              background: "rgb:000000"
             ) {
               ...GatsbyContentfulFluid_tracedSVG
             }
