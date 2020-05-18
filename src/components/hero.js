@@ -6,7 +6,8 @@ import styles from './hero.module.css'
 
 const ShortBio = styled.p`
   font-size: 1em;
-  width: 30em;
+  width: 100%;
+  max-width: 30em;
   filter: saturate(0.5);
   opacity: 0.5;
   color: #095f88;
