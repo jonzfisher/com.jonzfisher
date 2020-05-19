@@ -25,7 +25,7 @@ if (!spaceId || !accessToken) {
 
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Contentful starter',
+    title: 'Jonathan Fisher',
   },
   pathPrefix: '/gatsby-contentful-starter',
   plugins: [
@@ -42,7 +42,6 @@ module.exports = {
       options: {
         fonts: [
           `oxygen`,
-          `source sans pro\:300,400,700` // you can also specify font weights and styles
         ],
         display: 'swap'
       }

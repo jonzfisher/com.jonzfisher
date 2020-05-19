@@ -13,8 +13,14 @@ const StyledSmall = styled.small`
 const StyledLink = styled(Link)`
   text-decoration: none;
   &:hover{
-    color: black;
+    > .gatsby-image-wrapper{
+    box-shadow: 0 1px 1px rgba(9,95,136,0.12), 
+              0 2px 2px rgba(9,95,136,0.12), 
+              0 4px 4px rgba(9,95,136,0.12), 
+              0 8px 8px rgba(9,95,136,0.12),
+              0 16px 16px rgba(9,95,136,0.12);
     }
+    color: black;
   }
 `
 

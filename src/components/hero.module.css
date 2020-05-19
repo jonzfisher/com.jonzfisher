@@ -12,10 +12,11 @@
   height: 61.8vh;
   max-height: 400px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   padding: 0 5vmin;
+  box-sizing: border-box;
 }
 
 .heroDetails {
